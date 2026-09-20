@@ -32,6 +32,13 @@ python fashion_cnn.py
 
 The script downloads FashionMNIST into `data/` when needed, trains a CNN for five epochs, saves the best validation checkpoint locally, and reports final test accuracy.
 
+## Learning notebooks
+
+Open either notebook in VS Code, select the project's Python environment as its kernel, then run its cells from top to bottom:
+
+- `notebooks/01_linear_regression.ipynb`
+- `notebooks/02_fashion_mnist_cnn.ipynb`
+
 ## Result
 
 Latest run: **91.15% final test accuracy** using an NVIDIA GeForce RTX 4060 Laptop GPU.
