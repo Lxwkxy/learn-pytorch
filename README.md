@@ -1,13 +1,6 @@
 # Learn PyTorch
 
-My hands-on PyTorch learning project, following the PyTorch Basics tutorial.
-
-## What is included
-
-- Python and tensor practice
-- A simple linear-regression project
-- FashionMNIST classification with a fully connected neural network
-- FashionMNIST classification with a CNN, including train/validation/test separation
+A hands-on PyTorch learning project based on the official PyTorch Basics tutorial.
 
 ## Setup
 
@@ -15,28 +8,19 @@ Create and activate a virtual environment in PowerShell:
 
 ```powershell
 py -m venv .venv
-.\\.venv\\Scripts\\Activate.ps1
+.\.venv\Scripts\Activate.ps1
 ```
 
-Install the CUDA-enabled PyTorch build (used with an NVIDIA GPU):
+Install PyTorch and TorchVision:
 
 ```powershell
 python -m pip install torch torchvision --index-url https://download.pytorch.org/whl/cu130
 ```
 
-## Learning notebooks
+## Run
 
-Open either notebook in VS Code, select the project's Python environment as its kernel, then run its cells from top to bottom:
-
-- `notebooks/01_linear_regression.ipynb`
-- `notebooks/02_fashion_mnist_cnn.ipynb`
-
-The CNN notebook downloads FashionMNIST into `data/` when needed, trains for five epochs, saves the best validation checkpoint locally, and reports final test accuracy.
-
-## Result
-
-Latest run: **91.15% final test accuracy** using an NVIDIA GeForce RTX 4060 Laptop GPU.
+Open a notebook in VS Code, select the project's Python environment as its kernel, and run the cells from top to bottom.
 
 ## Repository policy
 
-The repository keeps source code and documentation. It intentionally ignores the virtual environment, downloaded dataset, and `.pth` checkpoints because they can be recreated and would make the repository unnecessarily large.
+This repository keeps source notebooks and documentation. It intentionally ignores the virtual environment, downloaded dataset, and model checkpoint files because they can be recreated and would make the repository unnecessarily large.
